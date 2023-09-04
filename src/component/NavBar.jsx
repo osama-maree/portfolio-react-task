@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../style/navbrar.css";
 import Item from "./Item.jsx";
+import { Link } from "react-router-dom";
 const data = [
-  { e: "home", value: "Home" },
+  { e: "", value: "Home" },
   { e: "about", value: "about" },
   { e: "skills", value: "skills" },
   { e: "work", value: "my work" },
@@ -14,7 +15,7 @@ const NavBar = () => {
     <header className="nav shadow">
       <div className="container">
         <div className="logo">
-          <a href="#home">Osama-Dev</a>
+          <Link to="">Osama-Dev</Link>
         </div>
         <ul className={`navList ${open ? "showList" : ""}`} id="navList">
           {data.map((e, indx) => (

@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   padding-top: 11rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3.9rem;
 }
 @media screen and (max-width: 768px) {
   .home {
@@ -86,6 +86,9 @@
   .home .container .leftSide hr {
     display: none;
   }
+  .lineWidth {
+    display: none;
+  }
   .home .container .leftSide .content::after {
     content: "";
     width: 1px;
@@ -156,27 +159,27 @@
   color: var(--second-color);
   border: 1px solid var(--second-color);
 }
+.lineWidth,
 .home .container .leftSide hr {
   z-index: 1;
   position: absolute;
   width: 40%;
-  height: 1px;
+  height: 2px;
   left: 32%;
   top: calc(50% - 1px);
   background-color: var(--second-color);
 }
-.home .container .leftSide hr::before {
+
+.home .container .leftSide .lineWidth::before {
   content: "";
   position: absolute;
-  width: 0px;
-  height: 0px;
   left: -12px;
   top: calc(50% - 10px);
   border-width: 10px;
   border-style: solid;
   border-color: transparent var(--second-color) transparent transparent;
 }
-.home .container .leftSide hr::after {
+.home .container .leftSide .lineWidth::after {
   content: "";
   position: absolute;
   width: 0px;
