@@ -4,6 +4,7 @@ import "./app.css";
 import Layout from "./component/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import Skills from "./pages/Skills.jsx";
 const router = createBrowserRouter([
   {
     path: "",
@@ -18,8 +19,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "*",
-        element: <div>Page Note Found</div>,
+        path: "/skills",
+        element: <Skills />,
       },
     ],
   },

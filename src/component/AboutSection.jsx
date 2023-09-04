@@ -3,10 +3,10 @@ import AboutItem from "./AboutItem.jsx";
 
 const AboutSection = ({ title, data }) => {
   return (
-    <div class="halfRow">
-      <h3 class="title">Education</h3>
-      <div class="row bg-gray">
-        <div class="leftItem">
+    <div className="halfRow">
+      <h3 className="title">Education</h3>
+      <div className="row bg-gray">
+        <div className="leftItem">
           {data.map((item, indx) => (
             <AboutItem item={item} key={indx} />
           ))}

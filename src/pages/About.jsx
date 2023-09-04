@@ -41,10 +41,10 @@ const aboutData = [
 ];
 const About = () => {
   return (
-    <section class="about p-75 bg-second-color" id="about">
-      <div class="container">
+    <section className="about p-75 bg-second-color" id="about">
+      <div className="container">
         {<Title title={"about me"} />}
-        <p class="center-text">
+        <p className="center-text">
           I have the ability to explain and communicate.{" "}
           <a
             href="https://www.youtube.com/playlist?list=PLV6N0id9zWHR-UuWR3iTCzERfri4qXhf0"
@@ -54,7 +54,7 @@ const About = () => {
             lectures were uploaded for free on the YouTube platform.
           </a>
         </p>
-        <div class="row">
+        <div className="row">
           {aboutData.map((about, indx) => (
             <AboutSection title={about.title} data={about.data} key={indx} />
           ))}
